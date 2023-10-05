@@ -1,0 +1,23 @@
+#AI Template
+
+
+import random
+
+# Define a list of potential responses
+responses = [
+    "Hello!",
+    "How can I help you today?",
+    "Nice to meet you!",
+    "I'm sorry, I don't understand.",
+    "Tell me more."
+]
+
+# Function to generate a response
+def generate_response():
+    return random.choice(responses)
+
+# Main interaction loop
+while True:
+    user_input = input("User: ")
+    response = generate_response()
+    print("AI: " + response)
